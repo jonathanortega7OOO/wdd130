@@ -31,25 +31,19 @@ p {
  }
 nav {
     background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  nav {
-    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
   }
-  nav a {
+nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding:1em;
   }
-  nav a:link, nav a:visited {
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
   }
-  nav a:hover {
+nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
   } 
