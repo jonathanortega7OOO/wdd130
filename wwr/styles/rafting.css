@@ -13,6 +13,7 @@
     --nav-hover-link-color: #70161e;
     --nav-hover-background-color: #596f62;
 }
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -32,7 +33,6 @@ p {
     position: relative;
  }
  .hero img{
-    
     display: block;
     width: 100%;
     height: auto;
@@ -49,12 +49,12 @@ p {
     text-align: center;
     position: absolute;
     width: 100%;
-    height: 120px;
+    height: auto;
 	top: 45%;
     background: radial-gradient(#eee, #4567aa);
-    opacity: 0.90;
+    opacity: 0.90; 
 }
  .hero article img {
     float: right;
-    width: 195px;  
+    width: 190px; 
 }
