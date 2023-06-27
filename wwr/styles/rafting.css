@@ -58,3 +58,6 @@ p {
     float: right;
     width: 190px; 
 }
+footer a:link{
+    text-decoration: none;
+}
