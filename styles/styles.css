@@ -22,7 +22,8 @@ nav a {
     padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Open Sans', serif;
 }
 h1 {
     color: rgb(57, 109, 151);
@@ -44,12 +45,15 @@ p {
     margin: 20px;
     text-align: justify;
     font-family: 'Open Sans', serif;
+    font-size: large;
     color:rgb(0, 0, 0)
 }
 main {
     max-width: 840px;
     grid-column: 2/3;
     align-items: center;
+    background-color: #eee9d6;
+    margin: 1em;
 }
 aside{
     position: relative;
