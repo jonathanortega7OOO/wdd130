@@ -1,4 +1,6 @@
-* {    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
+* { 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -26,6 +28,7 @@ h1 {
     color: rgb(57, 109, 151);
     border-bottom: 1px solid steelblue;
     text-align: center;
+    font-family: 'Open Sans', serif;
 }
 main img {
     float: right;
@@ -40,6 +43,8 @@ p {
     padding: 0;
     margin: 20px;
     text-align: justify;
+    font-family: 'Open Sans', serif;
+    color:rgb(0, 0, 0)
 }
 main {
     max-width: 840px;
@@ -86,4 +91,7 @@ footer {
 .grid {
     display: grid;
     align-items: center;
+}
+.box a {
+    text-decoration: none;
 }
