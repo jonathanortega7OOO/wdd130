@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
 :root {
     --primary-color: #1c3144;
-    --secondary-color: #596f62;
+    --secondary-color: #86a192;
     --accent1-color: #141d0f;
     --accent2-color: #70161e;
     
@@ -12,6 +12,83 @@
     --nav-link-color: #1c3144;
     --nav-hover-link-color: #70161e;
     --nav-hover-background-color: #596f62;
+}
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color:var(--nav-background-color);
+}
+.logo img{
+    margin-top: .5em;
+    width: 150px;
+    height: auto;
+    margin-left: 1em;
+    border: 2px solid var(--nav-link-color);
+}
+.menu a {
+	display: block;
+    border: 2px solid var(--nav-link-color);
+    border-radius: 1em;
+    padding: .5em 1em;
+    margin: .5em;
+    color: var(--nav-link-color);
+    font-weight: 800;
+}
+ul {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style:none;
+    border-radius: .5em;
+    padding: .5em;
+    margin: 0;
+}
+section .history{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.history {
+    padding-top: 0.5rem;
+    max-width: auto;
+    max-height: auto;
+    display: flex;
+    align-items:start;
+}
+.history img{
+    max-width: 50%;
+    max-height:auto;
+}
+.his{
+    text-align: justify;
+    background-color: var(--secondary-color);
+}
+.adventure {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content:space-between;
+    align-items:center;
+}
+.adventure img {
+    width: 160px;
+    height: 100px;;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 body {
@@ -27,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
+    font-size: large;
     padding: 25px;
  }
  .hero{
@@ -58,6 +136,13 @@ p {
     float: right;
     width: 190px; 
 }
-footer a:link{
+footer a:link, .menu a:link {
     text-decoration: none;
 }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
