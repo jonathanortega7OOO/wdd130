@@ -52,14 +52,14 @@ section .history{
 }
 .history {
     padding-top: 0.5rem;
-    max-width: auto;
-    max-height: auto;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items:start;
 }
 .history img{
-    max-width: 50%;
-    max-height:auto;
+    width: 500px;
+    height:auto;
 }
 .his{
     text-align: justify;
