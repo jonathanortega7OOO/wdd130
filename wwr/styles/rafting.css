@@ -100,6 +100,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+    background: radial-gradient(#eee, #4567aa);
 }
 
 p {
@@ -132,12 +135,6 @@ p {
 	top: 45%;
     background: radial-gradient(#eee, #4567aa);
 }
-h2{
-    text-align: center;
-    width: 100%;
-    background: radial-gradient(#eee, #4567aa);
-
- }
  .hero article img {
     float: right;
     width: 190px; 
