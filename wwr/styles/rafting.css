@@ -36,6 +36,7 @@ header {
     margin: .5em;
     color: var(--nav-link-color);
     font-weight: 800;
+    background: radial-gradient(#eee, #4567aa);
 }
 ul {
     display: flex;
@@ -130,8 +131,13 @@ p {
     height: auto;
 	top: 45%;
     background: radial-gradient(#eee, #4567aa);
-    opacity: 0.90; 
 }
+h2{
+    text-align: center;
+    width: 100%;
+    background: radial-gradient(#eee, #4567aa);
+
+ }
  .hero article img {
     float: right;
     width: 190px; 
