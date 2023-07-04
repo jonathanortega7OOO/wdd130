@@ -18,7 +18,7 @@ header {
     display: grid;
     grid-template-columns: 20% 80%;
     align-items: center;
-    border-bottom: 1px solid var(--na);
+    border-bottom: 1px solid var(--primary-color);
     background-color:var(--nav-background-color);
 }
 .logo img{
