@@ -18,7 +18,7 @@ header {
     display: grid;
     grid-template-columns: 20% 80%;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--na);
     background-color:var(--nav-background-color);
 }
 .logo img{
@@ -28,7 +28,11 @@ header {
     margin-left: 1em;
     border: 2px solid var(--nav-link-color);
 }
-.menu a {
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+header a {
 	display: block;
     border: 2px solid var(--nav-link-color);
     border-radius: 1em;
@@ -67,6 +71,7 @@ section .history{
     background-color: var(--secondary-color);
 }
 .adventure {
+    padding: 0.5rem;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     justify-content:space-between;
@@ -139,7 +144,7 @@ p {
     float: right;
     width: 190px; 
 }
-footer a:link, .menu a:link {
+footer a:link, header a:link {
     text-decoration: none;
 }
 footer{
@@ -147,5 +152,6 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     justify-content: right;
+    border-top: 1px solid var(--primary-color);
 }
 
