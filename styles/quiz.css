@@ -24,22 +24,12 @@ li::before {
 }
 li {counter-increment: li}
 
-.form-item {
+form {
     display: grid;
     align-items: center;
-}
-.column1 {
-    grid-template-columns: 1fr;
-    margin: 0.5rem 0;
-}
-.column2{
     grid-template-columns: 1fr;
 }
-.res1 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 header {
     margin: 0 auto;
     width: 650px;
@@ -78,6 +68,7 @@ label {
     padding-right: 1rem;
 }
 input, select, textarea{
+    width: 500px;
     padding: 0.5rem;
     font-size: 1.1rem;
 }
