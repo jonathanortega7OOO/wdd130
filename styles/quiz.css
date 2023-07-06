@@ -12,7 +12,7 @@ body {
 }
 ol {list-style: none; 
     counter-reset: li;
-    padding: 2rem;
+    padding-left: 3rem;
 }
 li::before {
     content: counter(li)".";
@@ -20,16 +20,10 @@ li::before {
     display: inline-block; 
     width: 1.2em;
     margin-left: -1em;
-    font-weight: bold;  
+    font-weight: bold;
+    padding-top: 0.5rem;
 }
-li {counter-increment: li}
-
-form {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr;
-}
-
+li {counter-increment: li;}
 header {
     margin: 0 auto;
     width: 650px;
@@ -48,6 +42,7 @@ form {
     border-radius: 0.5rem;
     background-color: #eee;
     display: grid;
+    align-items: center;
 }
 fieldset {
     display: grid;
@@ -56,16 +51,16 @@ fieldset {
     padding: 1rem;
 }
 legend {
+    font-weight: bold;
     padding: 0.5rem;
     color: navy;
     font-size: 1.3em;
 }
 label, input, button, select, textarea {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', serif;
 }
 label {
     text-align: left;
-    padding-right: 1rem;
 }
 input, select, textarea{
     width: 500px;
@@ -86,10 +81,11 @@ button:hover {
     background-color: darkgreen;
 }
 footer {
+    font-weight: bold;
     margin: 1rem auto 0;
     width: 650px;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     color: #777;
     border-top: 1px solid #ccc;
 }
