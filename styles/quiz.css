@@ -59,6 +59,9 @@ legend {
 label, input, button, select, textarea {
     font-family: 'Open Sans', serif;
 }
+img {
+    margin: 0.4rem;
+}
 label {
     text-align: left;
 }
@@ -79,6 +82,9 @@ button {
 }
 button:hover {
     background-color: darkgreen;
+}
+select:hover{
+    background: rgb(165, 164, 164);
 }
 footer {
     font-weight: bold;
