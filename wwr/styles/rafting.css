@@ -214,7 +214,7 @@ button:hover {
     font-weight: bold;
     border: 1px solid var(--primary-color);
 }
-label, input, button, textarea, form p{
+label, input, textarea, form p{
     font-family: 'Open Sans', serif;
     font-size: large;
 }
