@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(#eee, #4567aa);
 }
 
-p:not(.contact p){
+p:not(.contact p, form p){
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     font-size: large;
@@ -155,3 +155,69 @@ footer{
     border-top: 1px solid var(--primary-color);
 }
 
+.map1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:start;
+}
+.employee{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    background-color: var(--secondary-color);
+}
+.title{
+ display: flex;
+}
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    align-items: center;
+    
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    padding: 1rem;
+}
+legend {
+    font-weight: bold;
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+}
+button:hover {
+    background-color: darkgreen;
+}
+.contact {
+    display: block;
+    text-align: center;
+    background-color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+}
+label, input, button, textarea, form p{
+    font-family: 'Open Sans', serif;
+    font-size: large;
+}
+.employee img{
+    width: 150px;
+}
