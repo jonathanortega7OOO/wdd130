@@ -79,9 +79,9 @@ section .history{
 }
 .adventure img {
     width: 160px;
-    height: 100px;;
+    height: 100px;
 }
-figure {
+figure:not(.routes figure) {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(#eee, #4567aa);
 }
 
-p:not(.contact p, form p){
+p:not(.contact p, form p, .trips p){
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     font-size: large;
@@ -119,17 +119,15 @@ p:not(.contact p, form p){
  .hero{
     position: relative;
  }
- .hero img{
+ .hero img, .trips img{
     display: block;
     width: 100%;
     height: auto;
  }
- .hero h1{
+ .hero h1 {
     text-align: center;
-    width: 100%;
     position: absolute;
     top: 0%;
-    background: radial-gradient(#eee, #4567aa);
     opacity: 0.8;
  }
  article {
@@ -144,7 +142,7 @@ p:not(.contact p, form p){
     float: right;
     width: 190px; 
 }
-footer a:link, header a:link {
+footer a:link, header a:link, .trips a:link{
     text-decoration: none;
 }
 footer{
@@ -203,10 +201,10 @@ button {
     padding: 0.75rem;
     font-size: 1.5rem;
 }
-button:hover {
+button:hover, .trips a:hover {
     background-color: darkgreen;
 }
-.contact {
+.contact, .trips {
     display: block;
     text-align: center;
     background-color: var(--secondary-color);
@@ -220,4 +218,44 @@ label, input, textarea, form p{
 }
 .employee img{
     width: 150px;
+}
+
+.trips h1 {
+    text-align: center;
+    position: absolute;
+    font-size: 32px;
+    top: 22%;
+    max-width: 960px;
+    opacity: 0.95;}
+.trips a{
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    width: 300px;
+    height: auto;
+}
+.routes{
+   display: grid;
+   grid-template-columns: 33.3% 33.3% 33.3%;
+   padding-top: 1.5rem;
+   justify-items: center;
+}
+.routes img{
+    width: 230px;
+    height: 190px;
+    align-items:center;
+}
+.routes div{
+    display: block;
+    border: 2px solid var(--primary-color);
+    border-radius: 1em;
+    margin: .2em;
+    color: var(--nav-link-color);
+    background: var(--secondary-color);
+    text-align: center;
+    font-size:larger;
 }
