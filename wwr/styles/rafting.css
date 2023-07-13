@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(#eee, #4567aa);
 }
 
-p:not(.contact p, form p, .trips p){
+p:not(.contact p, form p, .trips p, .routes p){
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     font-size: large;
@@ -254,8 +254,25 @@ label, input, textarea, form p{
     border: 2px solid var(--primary-color);
     border-radius: 1em;
     margin: .2em;
-    color: var(--nav-link-color);
+    color: var(--accent1-color);
     background: var(--secondary-color);
     text-align: center;
     font-size:larger;
+}
+table, td {
+    border: 1px solid #333;
+    text-align: center;
+    padding: 0.3rem;
+    background-color: var(--secondary-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+}
+.table{
+    display: grid;
+    justify-items: center;
+    padding-bottom: 1rem;
 }
