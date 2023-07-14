@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(#eee, #4567aa);
 }
 
-p:not(.contact p, form p, .trips p, .routes p){
+p:not(.contact p, form p, .trips p, .routes p, .index p, .offers p){
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
     font-size: large;
@@ -142,7 +142,7 @@ p:not(.contact p, form p, .trips p, .routes p){
     float: right;
     width: 190px; 
 }
-footer a:link, header a:link, .trips a:link{
+footer a:link, header a:link, .trips a:link, .to_trips a:link{
     text-decoration: none;
 }
 footer{
@@ -152,12 +152,12 @@ footer{
     justify-content: right;
     border-top: 1px solid var(--primary-color);
 }
-
 .map1 {
     width: 100%;
     height: auto;
     display: flex;
     align-items:start;
+    padding-bottom: 1rem;
 }
 .employee{
     width: 50%;
@@ -178,7 +178,7 @@ form {
     background-color: #eee;
     display: grid;
     align-items: center;
-    
+    justify-items: center; 
 }
 fieldset {
     display: grid;
@@ -188,7 +188,6 @@ fieldset {
 }
 legend {
     font-weight: bold;
-    padding: 0.5rem;
     color: navy;
     font-size: 1.3em;
 }
@@ -200,8 +199,9 @@ button {
     border-radius: 0.5rem;
     padding: 0.75rem;
     font-size: 1.5rem;
+    width: 250px;
 }
-button:hover, .trips a:hover {
+button:hover, .trips a:hover, .to_trips a:hover {
     background-color: darkgreen;
 }
 .contact, .trips {
@@ -227,7 +227,7 @@ label, input, textarea, form p{
     top: 22%;
     max-width: 960px;
     opacity: 0.85;}
-.trips a{
+.trips a, .to_trips a{
     margin: 1rem;
     background-color: var(--primary-color);
     color: #fff;
@@ -276,3 +276,60 @@ th {
     justify-items: center;
     padding-bottom: 1rem;
 }
+
+.index{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    justify-items: center;
+    padding-top: 0.7rem;
+    justify-content: space-between;
+ }
+.index form {
+    width: 490px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align:justify ;
+    border: 1px solid var(--primary-color);
+}
+.to_trips{
+    display: block;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: larger;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+.to_trips img{
+    width: 400px;
+    height: 200px;
+    align-items:center;
+}
+.offers{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 0.5rem;
+    justify-items: center;
+    text-align: center;
+    font-size:larger;
+    padding-bottom: 0.5rem;
+
+ }
+ .offers img{
+    width: 90%;
+    height: 300px;
+    padding: 0.5rem;
+ }
+ .offers div{
+    margin: 0.3rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+    padding: 0.3rem;
+ }
