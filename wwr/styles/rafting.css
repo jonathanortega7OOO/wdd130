@@ -224,9 +224,10 @@ label, input, textarea, form p{
     text-align: center;
     position: absolute;
     font-size: 32px;
-    top: 23%;
+    top: 20%;
     max-width: 960px;
-    opacity: 0.87;}
+    opacity: 0.87;
+}
 .trips a, .to_trips a{
     margin: 1rem;
     background-color: var(--primary-color);
