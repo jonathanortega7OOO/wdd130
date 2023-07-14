@@ -226,7 +226,7 @@ label, input, textarea, form p{
     font-size: 32px;
     top: 22%;
     max-width: 960px;
-    opacity: 0.95;}
+    opacity: 0.85;}
 .trips a{
     margin: 1rem;
     background-color: var(--primary-color);
