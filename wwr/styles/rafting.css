@@ -224,7 +224,7 @@ label, input, textarea, form p{
     text-align: center;
     position: absolute;
     font-size: 32px;
-    top: 20%;
+    top: 30%;
     max-width: 960px;
     opacity: 0.87;
 }
@@ -246,8 +246,8 @@ label, input, textarea, form p{
    justify-items: center;
 }
 .routes img{
-    width: 230px;
-    height: 190px;
+    width: 260px;
+    height: 205px;
     align-items:center;
 }
 .routes div{
@@ -259,6 +259,7 @@ label, input, textarea, form p{
     background: var(--secondary-color);
     text-align: center;
     font-size:larger;
+    padding: 0.2rem;
 }
 table, td {
     border: 1px solid #333;
